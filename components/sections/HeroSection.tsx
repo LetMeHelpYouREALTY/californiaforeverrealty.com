@@ -4,22 +4,30 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
+const HERO_IMAGES = [
+  {
+    src: "/images/hero/las-vegas-valley.webp",
+    alt: "Las Vegas valley homes at dusk with the Spring Mountains",
+  },
+  {
+    src: "/images/properties/summerlin-home.webp",
+    alt: "Modern two-story home in Summerlin, Las Vegas",
+  },
+  {
+    src: "/images/properties/henderson-home.webp",
+    alt: "Single-story home in Henderson, Nevada",
+  },
+];
+
 export default function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
   const prefersReducedMotion = useReducedMotion();
-  
-  const images = [
-    "/Image/hero_bg_1.jpg",
-    "/Image/hero_bg_2.jpg",
-    "/Image/hero_bg_3.jpg",
-  ];
 
   useEffect(() => {
-    // Don't animate if user prefers reduced motion
     if (prefersReducedMotion) return;
-    
+
     const intervalId = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
+      setCurrentImage((prev) => (prev + 1) % HERO_IMAGES.length);
     }, 5000);
     return () => clearInterval(intervalId);
   }, [prefersReducedMotion]);
@@ -28,7 +36,7 @@ export default function HeroSection() {
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Images */}
       <div className="absolute inset-0">
-        {images.map((src, index) => (
+        {HERO_IMAGES.map((image, index) => (
           <div
             key={index}
             className={`absolute inset-0 ${
@@ -40,9 +48,10 @@ export default function HeroSection() {
             }`}
           >
             <Image
-              src={src}
-              alt={`Hero image ${index + 1}`}
+              src={image.src}
+              alt={image.alt}
               fill
+              sizes="100vw"
               className="object-cover"
               priority={index === 0}
             />

@@ -1,7 +1,7 @@
 import SiteNavbar from "@/components/layouts/SiteNavbar";
 import Footer from "@/components/layouts/Footer";
 import Image from "next/image";
-import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
+import { Bed, Bath, Square, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 
@@ -10,22 +10,56 @@ export const metadata: Metadata = {
   description: "View detailed information about this property listing in Las Vegas or Henderson, NV.",
 };
 
-// This would typically fetch from RealScout API
-async function getProperty(id: string) {
-  // Placeholder - replace with RealScout API call
-  return {
-    id,
+const SAMPLE_PROPERTIES: Record<
+  string,
+  {
+    name: string;
+    location: string;
+    price: string;
+    image: string;
+    bedrooms: number;
+    bathrooms: number;
+    squareFeet: number;
+    description: string;
+  }
+> = {
+  "1": {
     name: "Modern Luxury Home",
     location: "Summerlin, Las Vegas, NV",
     price: "$850,000",
-    image: "/Image/hero_bg_1.jpg",
+    image: "/images/properties/summerlin-home.webp",
     bedrooms: 4,
     bathrooms: 3,
     squareFeet: 3200,
-    yearBuilt: 2018,
     description:
-      "Stunning modern home in desirable Summerlin community. Features open floor plan, updated kitchen, and beautiful backyard. Close to schools, shopping, and entertainment.",
-  };
+      "Two-story home in Summerlin with an open floor plan, an updated kitchen, and a backyard. Red Rock Canyon is the view to the west.",
+  },
+  "2": {
+    name: "Single-Story Home",
+    location: "Henderson, NV",
+    price: "$625,000",
+    image: "/images/properties/henderson-home.webp",
+    bedrooms: 3,
+    bathrooms: 2,
+    squareFeet: 2400,
+    description:
+      "Single-story home in Henderson with a tile roof, a front courtyard, and desert landscaping.",
+  },
+  "3": {
+    name: "Elegant Estate",
+    location: "Green Valley, Henderson, NV",
+    price: "$1,200,000",
+    image: "/images/properties/green-valley-estate.webp",
+    bedrooms: 5,
+    bathrooms: 4,
+    squareFeet: 4500,
+    description:
+      "Two-story home in Green Valley with stone and stucco, tall windows, and a wide driveway.",
+  },
+};
+
+async function getProperty(id: string) {
+  return { id, ...(SAMPLE_PROPERTIES[id] ?? SAMPLE_PROPERTIES["1"]) };
 }
 
 type PropertyPageProps = {
@@ -76,8 +110,9 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden mb-8">
             <Image
               src={property.image}
-              alt={property.name}
+              alt={`${property.name} in ${property.location}`}
               fill
+              sizes="(max-width: 768px) 100vw, 1200px"
               className="object-cover"
               priority
             />
@@ -106,10 +141,6 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
                     <span className="text-slate-700">
                       {property.squareFeet.toLocaleString()} sq ft
                     </span>
-                  </div>
-                  <div className="flex items-center">
-                    <Calendar className="h-5 w-5 text-blue-600 mr-2" />
-                    <span className="text-slate-700">Built {property.yearBuilt}</span>
                   </div>
                 </div>
               </div>

@@ -68,7 +68,7 @@ export default async function Home() {
         {/* Domain-Aware Hero. Decorative wash is a compressed WebP, not the 2.3MB JPEG. */}
         <section className="relative bg-slate-900 text-white py-24 md:py-32 overflow-hidden">
           <Image
-            src="/images/hero/hero-wash.webp"
+            src="/images/hero/las-vegas-valley.webp"
             alt=""
             width={828}
             height={580}
