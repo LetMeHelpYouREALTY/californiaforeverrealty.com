@@ -106,7 +106,7 @@ Your site should achieve:
 Track specific user actions beyond page views:
 
 ```typescript
-import { track } from '@vercel/analytics'
+import { track } from '@vercel/analytics/next'
 
 // Track lead form submission
 track('lead_submitted', {
