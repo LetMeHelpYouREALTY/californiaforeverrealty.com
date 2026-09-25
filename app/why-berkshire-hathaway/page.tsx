@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Shield, Users, Globe, Award, TrendingUp, CheckCircle, Phone } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Why Choose Berkshire Hathaway HomeServices | Las Vegas Real Estate",
@@ -52,6 +53,7 @@ export default function WhyBerkshireHathawayPage() {
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               The Most Trusted Name in Real Estate
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Why Choose Berkshire Hathaway HomeServices?
             </h1>
@@ -66,6 +68,7 @@ export default function WhyBerkshireHathawayPage() {
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
+                <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
                   Backed by Warren Buffett's Legacy
                 </h2>
@@ -102,6 +105,7 @@ export default function WhyBerkshireHathawayPage() {
 
           {/* Key Benefits */}
           <section className="mb-16 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">
               The BHHS Advantage
             </h2>
@@ -176,6 +180,7 @@ export default function WhyBerkshireHathawayPage() {
 
           {/* Stats Section */}
           <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold mb-8 text-center">
               Berkshire Hathaway HomeServices By The Numbers
             </h2>
@@ -203,6 +208,7 @@ export default function WhyBerkshireHathawayPage() {
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
+                <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
                   Your Local BHHS Expert in Las Vegas
                 </h2>
@@ -248,6 +254,7 @@ export default function WhyBerkshireHathawayPage() {
 
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Frequently Asked Questions About BHHS
             </h2>
@@ -280,6 +287,7 @@ export default function WhyBerkshireHathawayPage() {
 
           {/* CTA */}
           <section className="text-center bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Experience the Berkshire Hathaway Difference
             </h2>

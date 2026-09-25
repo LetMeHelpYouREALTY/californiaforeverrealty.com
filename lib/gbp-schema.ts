@@ -215,7 +215,7 @@ export function generateLocalBusinessSchema() {
     "@type": "RealEstateAgent",
     "@id": "https://heyberkshire.com/#organization",
     name: businessInfo.name,
-    image: "https://heyberkshire.com/images/hero/las-vegas-valley.webp",
+    image: "https://heyberkshire.com/images/agent/dr-jan-duffy.jpg",
     url: businessInfo.url,
     telephone: businessInfo.phone.tel,
     email: businessInfo.email,

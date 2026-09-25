@@ -26,6 +26,7 @@ import {
   generateLocalBusinessSchema,
   generateFAQSchema,
 } from "@/lib/gbp-schema";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Dr. Jan Duffy, REALTOR® Las Vegas | Berkshire Hathaway HomeServices",
@@ -75,6 +76,7 @@ export default function GoogleBusinessPage() {
                     <Award className="h-6 w-6 text-yellow-400" />
                     <span className="text-yellow-400 font-semibold">Berkshire Hathaway HomeServices</span>
                   </div>
+                  <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     Dr. Jan Duffy
                   </h1>
@@ -147,6 +149,7 @@ export default function GoogleBusinessPage() {
 
           {/* About - 750 Word Description Structure */}
           <section className="max-w-4xl mx-auto mb-16">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">About Dr. Jan Duffy</h2>
             
             {/* Section 1: Who We Are */}
@@ -179,6 +182,7 @@ export default function GoogleBusinessPage() {
 
           {/* Services - Each creates searchable GBP field */}
           <section className="max-w-5xl mx-auto mb-16">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">Real Estate Services</h2>
             <div className="grid md:grid-cols-3 gap-4">
               {businessInfo.services.map((service) => (
@@ -197,6 +201,7 @@ export default function GoogleBusinessPage() {
 
           {/* Service Areas - Distance factor */}
           <section className="max-w-5xl mx-auto mb-16">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">Service Areas</h2>
             <div className="bg-blue-50 rounded-xl p-8">
               <div className="grid md:grid-cols-3 gap-8">
@@ -243,6 +248,7 @@ export default function GoogleBusinessPage() {
 
           {/* FAQ Section - Extra ranking boost */}
           <section className="max-w-4xl mx-auto mb-16">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Frequently Asked Questions
             </h2>
@@ -263,6 +269,7 @@ export default function GoogleBusinessPage() {
           <section className="max-w-4xl mx-auto mb-16">
             <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border border-yellow-200 rounded-xl p-8 text-center">
               <Star className="h-12 w-12 text-yellow-500 mx-auto mb-4" />
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-2xl font-bold text-slate-900 mb-4">
                 Your Review Helps Others Find Quality Service
               </h2>
@@ -284,6 +291,7 @@ export default function GoogleBusinessPage() {
           {/* Contact CTA */}
           <section className="max-w-4xl mx-auto">
             <div className="bg-slate-900 text-white rounded-2xl p-8 md:p-12 text-center">
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
               <p className="text-xl text-slate-300 mb-8">
                 Contact Dr. Jan Duffy for a free consultation about buying or selling in Las Vegas.

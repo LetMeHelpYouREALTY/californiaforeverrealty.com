@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Real Estate Services Las Vegas | Berkshire Hathaway HomeServices",
@@ -180,6 +181,7 @@ export default function ServicesPage() {
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Las Vegas Real Estate Services
             </h1>
@@ -207,6 +209,7 @@ export default function ServicesPage() {
 
           {/* Core Services Section */}
           <section className="mb-16 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Core Real Estate Services
             </h2>
@@ -259,6 +262,7 @@ export default function ServicesPage() {
 
           {/* Specialized Services Section */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Specialized Real Estate Services
             </h2>
@@ -307,6 +311,7 @@ export default function ServicesPage() {
 
           {/* Buyer Types */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Services for Every Type of Buyer
             </h2>
@@ -337,6 +342,7 @@ export default function ServicesPage() {
 
           {/* Seller Types */}
           <section className="mb-16 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Services for Every Type of Seller
             </h2>
@@ -365,6 +371,7 @@ export default function ServicesPage() {
 
           {/* Value Proposition */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold mb-6 text-center">
               The Berkshire Hathaway HomeServices Difference
             </h2>
@@ -419,6 +426,7 @@ export default function ServicesPage() {
 
           {/* Service Process */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               How Our Real Estate Services Work
             </h2>
@@ -482,6 +490,7 @@ export default function ServicesPage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Get Started?</h2>
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy for a free consultation about any of our real estate services. 

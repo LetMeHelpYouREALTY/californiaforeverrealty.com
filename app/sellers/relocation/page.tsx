@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Relocation Home Sales Las Vegas | Berkshire Hathaway HomeServices",
@@ -53,6 +54,7 @@ export default function RelocationPage() {
               <Plane className="h-4 w-4 mr-2" />
               Nationwide BHHS Network
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               New Opportunity?<br />We Handle Your Sale.
             </h1>
@@ -73,6 +75,7 @@ export default function RelocationPage() {
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="flex items-center justify-center mb-6">
               <Globe className="h-8 w-8 mr-3 text-blue-400" />
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold">Berkshire Hathaway HomeServices Network</h2>
             </div>
             <p className="text-center text-slate-300 mb-8 max-w-2xl mx-auto">
@@ -101,6 +104,7 @@ export default function RelocationPage() {
 
           {/* How We Help */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               How We Handle Your Relocation Sale
             </h2>
@@ -207,6 +211,7 @@ export default function RelocationPage() {
 
           {/* Timeline Options */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Relocation Timeline Options
             </h2>
@@ -311,6 +316,7 @@ export default function RelocationPage() {
 
           {/* Common Relocation Destinations */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Popular Relocation Destinations from Las Vegas
             </h2>
@@ -338,6 +344,7 @@ export default function RelocationPage() {
 
           {/* The Relocation Process */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               The Relocation Process Step by Step
             </h2>
@@ -397,6 +404,7 @@ export default function RelocationPage() {
 
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Relocation FAQs
             </h2>
@@ -433,6 +441,7 @@ export default function RelocationPage() {
 
           {/* Coming TO Las Vegas */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Relocating TO Las Vegas?
             </h2>
@@ -495,6 +504,7 @@ export default function RelocationPage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Make Your Move?
             </h2>

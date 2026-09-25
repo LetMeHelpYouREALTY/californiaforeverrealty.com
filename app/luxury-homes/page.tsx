@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Las Vegas Luxury Homes for Sale | Berkshire Hathaway HomeServices",
@@ -130,6 +131,7 @@ export default function LuxuryHomesPage() {
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Las Vegas Luxury Real Estate
             </h1>
@@ -148,6 +150,7 @@ export default function LuxuryHomesPage() {
 
           {/* Luxury Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold mb-4 text-center">
               Las Vegas Luxury Market Statistics | January 2026
             </h2>
@@ -178,6 +181,7 @@ export default function LuxuryHomesPage() {
 
           {/* Why BHHS for Luxury */}
           <section className="mb-16 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Why Choose Berkshire Hathaway for Luxury Real Estate
             </h2>
@@ -225,6 +229,7 @@ export default function LuxuryHomesPage() {
 
           {/* Expert Quote */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Expert Luxury Real Estate Guidance
             </h2>
@@ -245,6 +250,7 @@ export default function LuxuryHomesPage() {
 
           {/* Luxury Neighborhoods */}
           <section className="mb-16 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Premier Las Vegas Luxury Communities
             </h2>
@@ -291,6 +297,7 @@ export default function LuxuryHomesPage() {
 
           {/* Luxury Services */}
           <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold mb-4 text-center">Luxury Home Marketing Services</h2>
             <p className="text-blue-100 text-center max-w-3xl mx-auto mb-8">
               Selling a luxury home requires more than just an MLS listing. Dr. Jan Duffy provides 
@@ -309,6 +316,7 @@ export default function LuxuryHomesPage() {
 
           {/* Buying vs Selling */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Luxury Buyer & Seller Services
             </h2>
@@ -376,6 +384,7 @@ export default function LuxuryHomesPage() {
 
           {/* FAQ */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Frequently Asked Questions About Las Vegas Luxury Homes
             </h2>
@@ -420,6 +429,7 @@ export default function LuxuryHomesPage() {
 
           {/* CTA */}
           <section className="text-center bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Discover Las Vegas Luxury Living
             </h2>

@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Move-Up Sellers Las Vegas | Berkshire Hathaway HomeServices",
@@ -52,6 +53,7 @@ export default function MoveUpSellerPage() {
               <TrendingUp className="h-4 w-4 mr-2" />
               Your Equity Unlocks Your Dream Home
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Ready for Your Next Chapter?
             </h1>
@@ -69,6 +71,7 @@ export default function MoveUpSellerPage() {
 
           {/* Equity Section */}
           <section className="mb-16 bg-green-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold mb-8 text-center">
               Your Equity Position is Stronger Than You Think
             </h2>
@@ -97,6 +100,7 @@ export default function MoveUpSellerPage() {
 
           {/* Upgrade Path */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Common Upgrade Paths We Help With
             </h2>
@@ -153,6 +157,7 @@ export default function MoveUpSellerPage() {
 
           {/* How We Handle Both */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               We Handle Both Transactions Seamlessly
             </h2>
@@ -210,6 +215,7 @@ export default function MoveUpSellerPage() {
 
           {/* Timing Strategies */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Timing Your Move-Up: Three Proven Strategies
             </h2>
@@ -276,6 +282,7 @@ export default function MoveUpSellerPage() {
 
           {/* Financing Options */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold mb-8 text-center">
               Financing Your Move-Up Purchase
             </h2>
@@ -342,6 +349,7 @@ export default function MoveUpSellerPage() {
 
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Move-Up Seller FAQs
             </h2>
@@ -378,6 +386,7 @@ export default function MoveUpSellerPage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               What's Your Home Worth Today?
             </h2>

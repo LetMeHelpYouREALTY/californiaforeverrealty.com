@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Solera at Anthem Homes for Sale | Intimate Guard-Gated 55+ Henderson | Dr. Jan Duffy",
@@ -88,6 +89,7 @@ export default function SoleraAnthemPage() {
               <Heart className="h-4 w-4 mr-2" />
               Intimate Guard-Gated 55+ Community
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Solera at Anthem
             </h1>
@@ -99,6 +101,7 @@ export default function SoleraAnthemPage() {
 
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold mb-8 text-center">
               Solera at Anthem at a Glance
             </h2>
@@ -131,6 +134,7 @@ export default function SoleraAnthemPage() {
           {/* About */}
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-slate-700">
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">
                 About Solera at Anthem
               </h2>
@@ -200,6 +204,7 @@ export default function SoleraAnthemPage() {
 
           {/* Amenities */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Community Amenities
             </h2>
@@ -251,6 +256,7 @@ export default function SoleraAnthemPage() {
 
           {/* Henderson Location */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Henderson: America's Safest Large City
             </h2>
@@ -317,6 +323,7 @@ export default function SoleraAnthemPage() {
 
           {/* Why Choose Solera */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Why Buyers Choose Solera at Anthem
             </h2>
@@ -390,6 +397,7 @@ export default function SoleraAnthemPage() {
 
           {/* CTA */}
           <section className="text-center bg-teal-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Experience Intimate 55+ Living
             </h2>

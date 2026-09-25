@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Relocating to Las Vegas | Berkshire Hathaway HomeServices",
@@ -120,6 +121,7 @@ export default function RelocationPage() {
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Relocating to Las Vegas?
             </h1>
@@ -138,6 +140,7 @@ export default function RelocationPage() {
 
           {/* Why Las Vegas */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold mb-4 text-center">Why People Are Moving to Las Vegas</h2>
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
               Las Vegas has become one of the fastest-growing cities in America, attracting 
@@ -170,6 +173,7 @@ export default function RelocationPage() {
 
           {/* Expert Quote */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Expert Relocation Guidance
             </h2>
@@ -189,6 +193,7 @@ export default function RelocationPage() {
 
           {/* Relocation Services */}
           <section className="mb-16 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Comprehensive Relocation Services
             </h2>
@@ -209,6 +214,7 @@ export default function RelocationPage() {
 
           {/* Neighborhoods */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Popular Relocation Destinations
             </h2>
@@ -244,6 +250,7 @@ export default function RelocationPage() {
 
           {/* School Information */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Las Vegas Schools & Education
             </h2>
@@ -302,6 +309,7 @@ export default function RelocationPage() {
 
           {/* Coming From California */}
           <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold mb-4 text-center">Moving from California?</h2>
             <p className="text-blue-100 text-center max-w-3xl mx-auto mb-8">
               California to Nevada is one of the most popular relocation routes in the country. 
@@ -342,6 +350,7 @@ export default function RelocationPage() {
 
           {/* BHHS Network */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               The Berkshire Hathaway HomeServices Advantage
             </h2>
@@ -377,6 +386,7 @@ export default function RelocationPage() {
 
           {/* FAQ */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Relocation Frequently Asked Questions
             </h2>
@@ -421,6 +431,7 @@ export default function RelocationPage() {
 
           {/* CTA */}
           <section className="text-center bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Planning Your Move to Las Vegas?</h2>
             <p className="text-xl text-slate-300 mb-8">
               Let Dr. Jan Duffy and Berkshire Hathaway HomeServices make your relocation stress-free.

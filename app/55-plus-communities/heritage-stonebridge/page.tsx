@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Heritage at Stonebridge Homes for Sale | Guard-Gated 55+ Summerlin | Dr. Jan Duffy",
@@ -88,6 +89,7 @@ export default function HeritageAtStonebridgePage() {
               <Shield className="h-4 w-4 mr-2" />
               Guard-Gated Summerlin 55+ Community
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Heritage at Stonebridge
             </h1>
@@ -99,6 +101,7 @@ export default function HeritageAtStonebridgePage() {
 
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold mb-8 text-center">
               Heritage at Stonebridge at a Glance
             </h2>
@@ -131,6 +134,7 @@ export default function HeritageAtStonebridgePage() {
           {/* About */}
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-slate-700">
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">
                 About Heritage at Stonebridge
               </h2>
@@ -205,6 +209,7 @@ export default function HeritageAtStonebridgePage() {
 
           {/* Amenities */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Community Amenities
             </h2>
@@ -250,6 +255,7 @@ export default function HeritageAtStonebridgePage() {
 
           {/* Location Benefits */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Premium Summerlin Location
             </h2>
@@ -315,6 +321,7 @@ export default function HeritageAtStonebridgePage() {
 
           {/* Why Choose Heritage */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Why Buyers Choose Heritage at Stonebridge
             </h2>
@@ -390,6 +397,7 @@ export default function HeritageAtStonebridgePage() {
 
           {/* CTA */}
           <section className="text-center bg-purple-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Experience Guard-Gated 55+ Living
             </h2>

@@ -21,6 +21,7 @@ import {
   generateFAQSchema,
   combineSchemas,
 } from "@/lib/schema";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Sun City Anthem Homes for Sale | Berkshire Hathaway HomeServices",
@@ -125,6 +126,7 @@ export default function SunCityAnthemPage() {
               <Mountain className="h-4 w-4 mr-2" />
               Henderson's Premier 55+ Community
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Sun City Anthem
             </h1>
@@ -135,6 +137,7 @@ export default function SunCityAnthemPage() {
 
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold mb-8 text-center">
               Sun City Anthem at a Glance
             </h2>
@@ -161,6 +164,7 @@ export default function SunCityAnthemPage() {
           {/* About */}
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-slate-700">
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">
                 About Sun City Anthem
               </h2>
@@ -219,6 +223,7 @@ export default function SunCityAnthemPage() {
 
           {/* Amenities */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Sun City Anthem Amenities
             </h2>
@@ -264,6 +269,7 @@ export default function SunCityAnthemPage() {
 
           {/* Neighborhoods */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Sun City Anthem Neighborhoods
             </h2>
@@ -316,6 +322,7 @@ export default function SunCityAnthemPage() {
 
           {/* CTA */}
           <section className="text-center bg-green-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Discover Sun City Anthem
             </h2>

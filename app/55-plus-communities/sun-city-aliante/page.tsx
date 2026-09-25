@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Sun City Aliante Homes for Sale | Most Affordable Sun City | Dr. Jan Duffy",
@@ -87,6 +88,7 @@ export default function SunCityAliantePage() {
               <DollarSign className="h-4 w-4 mr-2" />
               Most Affordable Sun City in Las Vegas
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Sun City Aliante
             </h1>
@@ -98,6 +100,7 @@ export default function SunCityAliantePage() {
 
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold mb-8 text-center">
               Sun City Aliante at a Glance
             </h2>
@@ -128,6 +131,7 @@ export default function SunCityAliantePage() {
           {/* About */}
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-slate-700">
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">
                 About Sun City Aliante
               </h2>
@@ -213,6 +217,7 @@ export default function SunCityAliantePage() {
 
           {/* Amenities */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Full Sun City Amenities
             </h2>
@@ -264,6 +269,7 @@ export default function SunCityAliantePage() {
 
           {/* Location Benefits */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Location Advantages
             </h2>
@@ -329,6 +335,7 @@ export default function SunCityAliantePage() {
 
           {/* Why Choose Sun City Aliante */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Why Buyers Choose Sun City Aliante
             </h2>
@@ -403,6 +410,7 @@ export default function SunCityAliantePage() {
 
           {/* CTA */}
           <section className="text-center bg-green-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Discover Sun City Aliante's Value
             </h2>

@@ -16,6 +16,7 @@ import {
   californiaForeverHeadings,
 } from "@/lib/california-forever-headings";
 import { marketStats } from "@/lib/site-config";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export async function generateMetadata(): Promise<Metadata> {
   const config = await getPageDomainConfig();
@@ -42,6 +43,7 @@ export default async function Home() {
     name: `Dr. Jan Duffy - ${config.neighborhood} Real Estate`,
     alternateName: config.siteName,
     url: canonicalOriginFromHost(config.domain === "default" ? "heyberkshire.com" : config.domain),
+    image: `${canonicalOriginFromHost(config.domain === "default" ? "heyberkshire.com" : config.domain)}/images/agent/dr-jan-duffy.jpg`,
     telephone: "+1-702-500-1942",
     address: {
       "@type": "PostalAddress",
@@ -82,6 +84,7 @@ export default async function Home() {
                 {config.ctaBadge}
               </span>
             )}
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               {config.heroHeadline}
             </h1>
@@ -125,6 +128,7 @@ export default async function Home() {
         <section className="py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12">
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
                 Why Work With Dr. Jan Duffy?
               </h2>
@@ -156,6 +160,7 @@ export default async function Home() {
         <section className="py-16 bg-slate-900 text-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-10">
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold mb-3">
                 {config.neighborhood} Real Estate Market
               </h2>
@@ -221,6 +226,7 @@ export default async function Home() {
         {/* Domain-Specific CTA */}
         <section className="py-16 md:py-20 bg-blue-600 text-white">
           <div className="container mx-auto px-4 text-center">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               {config.ctaHeadline}
             </h2>

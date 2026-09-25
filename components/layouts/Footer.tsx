@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 import { getPageDomainConfig } from "@/lib/get-domain-config";
 
@@ -171,7 +172,10 @@ export default async function Footer() {
 
           {/* Contact Info - NAP (Name, Address, Phone) */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Contact Dr. Jan Duffy</h3>
+            <div className="mb-4 flex items-center gap-3">
+              <AgentPhoto size="md" />
+              <h3 className="font-bold text-lg">Contact Dr. Jan Duffy</h3>
+            </div>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0 mt-0.5" />

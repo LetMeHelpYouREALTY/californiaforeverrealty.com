@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 const HERO_IMAGES = [
   {
@@ -62,6 +63,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
+        <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
           Find Your Dream Home in
           <br />

@@ -6,6 +6,7 @@ import CalendlyWidget from "@/components/calendly/CalendlyWidget";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Contact Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
@@ -55,6 +56,7 @@ export default function ContactPage() {
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Contact Dr. Jan Duffy
             </h1>
@@ -68,6 +70,7 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Info & Map */}
             <div>
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-2xl font-bold text-slate-900 mb-6">Get In Touch</h2>
               <p className="text-slate-700 mb-8">
                 Whether you're buying your first home, selling a luxury property, or exploring
@@ -189,6 +192,7 @@ export default function ContactPage() {
               <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
                 <div className="bg-blue-600 text-white p-6 text-center">
                   <Calendar className="h-10 w-10 mx-auto mb-3" />
+                  <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
                   <h2 className="text-2xl font-bold mb-2">Schedule an Appointment</h2>
                   <p className="text-blue-100">
                     Book a time that works for you—phone consultation, property showing, 
@@ -227,6 +231,7 @@ export default function ContactPage() {
 
           {/* Service Areas Section */}
           <section className="max-w-5xl mx-auto mt-16">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Areas We Serve
             </h2>
@@ -259,6 +264,7 @@ export default function ContactPage() {
 
           {/* Quick Contact Options */}
           <section className="max-w-4xl mx-auto mt-16">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Prefer to Reach Out Directly?
             </h2>
@@ -288,6 +294,7 @@ export default function ContactPage() {
 
           {/* FAQ Section */}
           <section className="max-w-4xl mx-auto mt-16">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Frequently Asked Questions
             </h2>

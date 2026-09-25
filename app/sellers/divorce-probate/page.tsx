@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Divorce & Probate Home Sales Las Vegas | Berkshire Hathaway HomeServices",
@@ -53,6 +54,7 @@ export default function DivorceProbatePage() {
               <Shield className="h-4 w-4 mr-2" />
               Handled with Discretion & Professionalism
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Difficult Situations,<br />Expert Guidance
             </h1>
@@ -71,6 +73,7 @@ export default function DivorceProbatePage() {
 
           {/* Situations We Help With */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Situations We Help Navigate
             </h2>
@@ -187,6 +190,7 @@ export default function DivorceProbatePage() {
 
           {/* Our Approach */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Our Approach to Sensitive Transactions
             </h2>
@@ -274,6 +278,7 @@ export default function DivorceProbatePage() {
 
           {/* Nevada-Specific Information */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Nevada-Specific Considerations
             </h2>
@@ -345,6 +350,7 @@ export default function DivorceProbatePage() {
 
           {/* The Process */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               How We Handle Sensitive Transactions
             </h2>
@@ -409,6 +415,7 @@ export default function DivorceProbatePage() {
 
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Frequently Asked Questions
             </h2>
@@ -449,6 +456,7 @@ export default function DivorceProbatePage() {
 
           {/* Why BHHS Matters */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Why Berkshire Hathaway HomeServices for Sensitive Sales
             </h2>
@@ -501,6 +509,7 @@ export default function DivorceProbatePage() {
 
           {/* CTA */}
           <section className="text-center bg-slate-800 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Confidential Consultation
             </h2>

@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { HeadingSection } from "@/lib/california-forever-headings";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 type SiteHeadingOutlineProps = {
   sections: HeadingSection[];
@@ -27,6 +28,7 @@ export function SiteHeadingOutline({
         ) : null}
         {sections.map((section) => (
           <div key={section.h2} className="mb-12">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">{section.h2}</h2>
             <div className="space-y-6">
               {section.topics.map((topic) => (

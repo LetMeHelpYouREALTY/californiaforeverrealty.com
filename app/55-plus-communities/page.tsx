@@ -25,6 +25,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title:
@@ -371,6 +372,7 @@ export default function FiftyFiveCommunitiesPage() {
               <Sun className="h-4 w-4 mr-2" />
               Active Adult Living Specialist
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Find Your Perfect 55+ Community in Las Vegas
             </h1>
@@ -401,6 +403,7 @@ export default function FiftyFiveCommunitiesPage() {
 
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold mb-8 text-center">
               Las Vegas 55+ Market Overview | January 2026
             </h2>
@@ -480,6 +483,7 @@ export default function FiftyFiveCommunitiesPage() {
 
           {/* Lifestyle Benefits */}
           <section className="mb-16 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Why Active Adults Choose Las Vegas
             </h2>
@@ -540,6 +544,7 @@ export default function FiftyFiveCommunitiesPage() {
 
           {/* Communities Grid */}
           <section id="communities" className="mb-16 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Las Vegas 55+ Communities
             </h2>
@@ -658,6 +663,7 @@ export default function FiftyFiveCommunitiesPage() {
 
           {/* Amenities Overview */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               What 55+ Community Amenities Include
             </h2>
@@ -732,6 +738,7 @@ export default function FiftyFiveCommunitiesPage() {
 
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               55+ Community Buying FAQs
             </h2>
@@ -803,6 +810,7 @@ export default function FiftyFiveCommunitiesPage() {
 
           {/* Why BHHS */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Why Choose Dr. Jan Duffy for 55+ Communities?
             </h2>
@@ -870,6 +878,7 @@ export default function FiftyFiveCommunitiesPage() {
 
           {/* Final CTA */}
           <section className="text-center bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Let's Find Your Ideal Lifestyle Match
             </h2>

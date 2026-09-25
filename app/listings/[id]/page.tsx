@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Bed, Bath, Square, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Property Details | Las Vegas & Henderson Real Estate",
@@ -96,6 +97,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
 
           {/* Property Header */}
           <div className="mb-8">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
               {property.name}
             </h1>
@@ -122,6 +124,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Main Content */}
             <div className="md:col-span-2">
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-2xl font-bold text-slate-900 mb-4">Property Details</h2>
               <p className="text-slate-700 mb-6">{property.description}</p>
 

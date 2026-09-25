@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Phone, CheckCircle, Home, TrendingUp, MapPin, Calculator, Clock, DollarSign } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Free Home Valuation Las Vegas | What's Your Home Worth? | Berkshire Hathaway HomeServices",
@@ -89,6 +90,7 @@ export default function HomeValuationPage() {
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               What's Your Las Vegas Home Worth?
             </h1>
@@ -103,6 +105,7 @@ export default function HomeValuationPage() {
             {/* Calendly Widget */}
             <div className="bg-white border border-slate-200 rounded-lg overflow-hidden">
               <div className="bg-blue-600 text-white p-4 text-center">
+                <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
                 <h2 className="text-2xl font-bold">Schedule Your Free Valuation</h2>
                 <p className="text-blue-100 text-sm mt-1">
                   Book a consultation with Dr. Jan Duffy
@@ -118,6 +121,7 @@ export default function HomeValuationPage() {
             {/* Value Prop */}
             <div className="space-y-8">
               <div className="bg-slate-900 text-white rounded-lg p-8">
+                <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
                 <h2 className="text-2xl font-bold mb-4">Why Request a BHHS Valuation?</h2>
                 <p className="text-slate-300 mb-6">
                   Online estimators like Zillow's "Zestimate" can be off by 10% or more—that's
@@ -193,6 +197,7 @@ export default function HomeValuationPage() {
 
           {/* Why Online Estimates Fall Short */}
           <section className="max-w-5xl mx-auto mb-16">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Why Online Home Value Estimates Often Miss the Mark
             </h2>
@@ -275,6 +280,7 @@ export default function HomeValuationPage() {
 
           {/* Factors Affecting Value */}
           <section className="max-w-5xl mx-auto mb-16 bg-slate-50 rounded-2xl p-8 md:p-12">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Key Factors That Affect Your Las Vegas Home's Value
             </h2>
@@ -332,6 +338,7 @@ export default function HomeValuationPage() {
 
           {/* Neighborhood Values */}
           <section className="max-w-5xl mx-auto mb-16">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Las Vegas Neighborhood Home Values | January 2026
             </h2>
@@ -371,6 +378,7 @@ export default function HomeValuationPage() {
 
           {/* The Valuation Process */}
           <section className="max-w-5xl mx-auto mb-16">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               The BHHS Home Valuation Process
             </h2>
@@ -424,6 +432,7 @@ export default function HomeValuationPage() {
 
           {/* FAQ Section */}
           <section className="max-w-4xl mx-auto mb-16">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Frequently Asked Questions About Home Valuations
             </h2>
@@ -460,6 +469,7 @@ export default function HomeValuationPage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Know What Your Home Is Worth?
             </h2>

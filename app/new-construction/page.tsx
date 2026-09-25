@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
@@ -256,6 +257,7 @@ export default function NewConstructionPage() {
             <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Free Buyer Representation
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Berkshire Hathaway HomeServices New Construction Las Vegas
             </h1>
@@ -283,6 +285,7 @@ export default function NewConstructionPage() {
 
           {/* Why Free Representation */}
           <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold mb-8 text-center">
               Why Use a BHHS Agent for New Construction?
             </h2>
@@ -348,6 +351,7 @@ export default function NewConstructionPage() {
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-8">
               <div className="flex items-center justify-between flex-wrap gap-4 mb-6">
+                <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
                 <h2 className="text-2xl font-bold text-slate-900 flex items-center">
                   <Calendar className="h-7 w-7 text-green-600 mr-3" />
                   January 2026 Builder Incentives
@@ -388,6 +392,7 @@ export default function NewConstructionPage() {
 
           {/* Builders Grid */}
           <section className="mb-16 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Las Vegas New Home Builders
             </h2>
@@ -452,6 +457,7 @@ export default function NewConstructionPage() {
 
           {/* The Process */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               New Construction Buying Process with BHHS
             </h2>
@@ -554,6 +560,7 @@ export default function NewConstructionPage() {
 
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               New Construction FAQs
             </h2>
@@ -635,6 +642,7 @@ export default function NewConstructionPage() {
 
           {/* What We Negotiate */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               What Dr. Jan Negotiates for New Construction Buyers
             </h2>
@@ -663,6 +671,7 @@ export default function NewConstructionPage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Tour New Construction?
             </h2>

@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Las Vegas Market Update | January 2026",
@@ -81,6 +82,7 @@ export default function MarketUpdatePage() {
               <Calendar className="h-4 w-4 mr-2" />
               Week of January 20, 2026
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
               Berkshire Hathaway HomeServices Las Vegas Market Update
             </h1>
@@ -95,6 +97,7 @@ export default function MarketUpdatePage() {
 
           {/* Key Statistics */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold text-slate-900 mb-8 text-center">
               5 Key Statistics This Week
             </h2>
@@ -168,6 +171,7 @@ export default function MarketUpdatePage() {
 
           {/* Notable Sale */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold text-slate-900 mb-6">Notable Sale of the Week</h2>
             <div className="bg-gradient-to-r from-slate-900 to-slate-800 text-white rounded-2xl p-8">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
@@ -196,6 +200,7 @@ export default function MarketUpdatePage() {
 
           {/* Expert Analysis */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold text-slate-900 mb-6">Dr. Jan Duffy's Expert Analysis</h2>
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-r-xl p-8">
               <div className="prose prose-lg max-w-none text-slate-700">
@@ -236,6 +241,7 @@ export default function MarketUpdatePage() {
 
           {/* What This Means */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold text-slate-900 mb-8 text-center">
               What This Means for You
             </h2>
@@ -324,6 +330,7 @@ export default function MarketUpdatePage() {
 
           {/* Market by Area */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-bold text-slate-900 mb-6">This Week by Area</h2>
             <div className="overflow-x-auto">
               <table className="w-full bg-white border border-slate-200 rounded-xl overflow-hidden">
@@ -379,6 +386,7 @@ export default function MarketUpdatePage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Get Personalized Market Insights
             </h2>

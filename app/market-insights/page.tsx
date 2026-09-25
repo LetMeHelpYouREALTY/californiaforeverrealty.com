@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Las Vegas Real Estate Market Insights 2026 | Berkshire Hathaway HomeServices",
@@ -73,6 +74,7 @@ export default function MarketInsightsPage() {
               <TrendingUp className="h-4 w-4 mr-2" />
               2026 Economic & Real Estate Analysis
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Las Vegas Market Insights
             </h1>
@@ -84,6 +86,7 @@ export default function MarketInsightsPage() {
 
           {/* Key Drivers */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold mb-8 text-center">
               5 Forces Driving Las Vegas Real Estate in 2026
             </h2>
@@ -115,6 +118,7 @@ export default function MarketInsightsPage() {
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="flex items-center mb-6">
               <Cpu className="h-8 w-8 text-purple-600 mr-3" />
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold text-slate-900">
                 Las Vegas Tech Transformation
               </h2>
@@ -166,6 +170,7 @@ export default function MarketInsightsPage() {
           <section className="mb-16 bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="flex items-center mb-6">
               <Globe className="h-8 w-8 mr-3" />
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold">California Migration Analysis</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -229,6 +234,7 @@ export default function MarketInsightsPage() {
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="flex items-center mb-6">
               <Building2 className="h-8 w-8 text-green-600 mr-3" />
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold text-slate-900">
                 Economic Diversification
               </h2>
@@ -271,6 +277,7 @@ export default function MarketInsightsPage() {
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="flex items-center mb-6">
               <BarChart3 className="h-8 w-8 text-blue-600 mr-3" />
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold text-slate-900">
                 2026 Neighborhood Outlook
               </h2>
@@ -341,6 +348,7 @@ export default function MarketInsightsPage() {
 
           {/* What This Means */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               What This Means for You
             </h2>
@@ -425,6 +433,7 @@ export default function MarketInsightsPage() {
 
           {/* CTA */}
           <section className="text-center bg-purple-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Get Personalized Market Analysis
             </h2>

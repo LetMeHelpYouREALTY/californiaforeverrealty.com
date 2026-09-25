@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "First-Time Home Buyers Las Vegas | Berkshire Hathaway HomeServices",
@@ -100,6 +101,7 @@ export default function FirstTimeBuyersPage() {
               <Key className="h-4 w-4 mr-2" />
               Down Payment Assistance Available
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Your First Home in Las Vegas<br />
               <span className="text-blue-600">Starts Here</span>
@@ -118,6 +120,7 @@ export default function FirstTimeBuyersPage() {
 
           {/* Financing Options */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               First-Time Buyer Financing Options
             </h2>
@@ -175,6 +178,7 @@ export default function FirstTimeBuyersPage() {
 
           {/* Top Neighborhoods */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Best Neighborhoods for First-Time Buyers
             </h2>
@@ -281,6 +285,7 @@ export default function FirstTimeBuyersPage() {
           <section className="mb-16 bg-green-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="flex items-center justify-center mb-6">
               <Building className="h-8 w-8 mr-3" />
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold">New Construction Incentives</h2>
             </div>
             <p className="text-center text-green-100 mb-8 max-w-2xl mx-auto">
@@ -322,6 +327,7 @@ export default function FirstTimeBuyersPage() {
 
           {/* Rent vs Buy */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Rent vs. Buy in Las Vegas
             </h2>
@@ -360,6 +366,7 @@ export default function FirstTimeBuyersPage() {
 
           {/* Timeline */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               First-Time Buyer Timeline
             </h2>
@@ -428,6 +435,7 @@ export default function FirstTimeBuyersPage() {
 
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               First-Time Buyer FAQs
             </h2>
@@ -497,6 +505,7 @@ export default function FirstTimeBuyersPage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Stop Renting?
             </h2>

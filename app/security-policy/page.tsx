@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: 'Security Policy',
@@ -13,6 +14,7 @@ export default function SecurityPolicyPage() {
   return (
     <div className="min-h-screen bg-white py-12">
       <div className="container mx-auto max-w-4xl px-4">
+        <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
           Security Policy
         </h1>
@@ -20,6 +22,7 @@ export default function SecurityPolicyPage() {
         <div className="prose prose-lg max-w-none">
           {/* Overview */}
           <section className="mb-12">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
               Our Commitment to Security
             </h2>
@@ -32,6 +35,7 @@ export default function SecurityPolicyPage() {
 
           {/* Reporting Vulnerabilities */}
           <section className="mb-12">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
               Reporting Security Vulnerabilities
             </h2>
@@ -77,6 +81,7 @@ export default function SecurityPolicyPage() {
 
           {/* Security Measures */}
           <section className="mb-12">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
               Security Measures in Place
             </h2>
@@ -137,6 +142,7 @@ export default function SecurityPolicyPage() {
 
           {/* Third-Party Services */}
           <section className="mb-12">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
               Third-Party Services
             </h2>
@@ -176,6 +182,7 @@ export default function SecurityPolicyPage() {
 
           {/* Responsible Disclosure */}
           <section className="mb-12">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
               Responsible Disclosure Policy
             </h2>
@@ -195,6 +202,7 @@ export default function SecurityPolicyPage() {
 
           {/* Out of Scope */}
           <section className="mb-12">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
               Out of Scope
             </h2>
@@ -213,6 +221,7 @@ export default function SecurityPolicyPage() {
 
           {/* Security Best Practices */}
           <section className="mb-12">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
               Your Security
             </h2>
@@ -231,6 +240,7 @@ export default function SecurityPolicyPage() {
 
           {/* Contact */}
           <section className="mb-12">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
               Questions?
             </h2>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SiteNavbar from "@/components/layouts/SiteNavbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
@@ -19,6 +18,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
@@ -130,6 +130,7 @@ export default function AboutPage() {
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Meet Your Berkshire Hathaway HomeServices Agent
             </h1>
@@ -144,6 +145,7 @@ export default function AboutPage() {
           <section className="mb-16">
             <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
               <div>
+                <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Dr. Jan Duffy</h2>
                 <p className="text-lg text-blue-600 mb-6">
                   REALTOR® | License S.0197614.LLC
@@ -227,14 +229,8 @@ export default function AboutPage() {
               {/* Stats & Credentials */}
               <div className="space-y-6">
                 <div>
-                  <div className="relative aspect-square overflow-hidden rounded-lg">
-                    <Image
-                      src="/images/agent/office-square.webp"
-                      alt="Berkshire Hathaway HomeServices Nevada Properties office in Las Vegas"
-                      fill
-                      sizes="(max-width: 768px) 100vw, 400px"
-                      className="object-cover"
-                    />
+                  <div className="flex justify-center">
+                    <AgentPhoto size="lg" />
                   </div>
                   <p className="mt-3 text-center font-semibold text-slate-900">Dr. Jan Duffy</p>
                   <p className="text-center text-sm text-slate-500">BHHS Nevada Properties</p>
@@ -288,6 +284,7 @@ export default function AboutPage() {
 
           {/* Specializations Section */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
               Areas of Specialization
             </h2>
@@ -311,6 +308,7 @@ export default function AboutPage() {
 
           {/* Why BHHS Section */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
               Why Berkshire Hathaway HomeServices?
             </h2>
@@ -363,6 +361,7 @@ export default function AboutPage() {
 
           {/* Areas Served */}
           <section className="mb-16 max-w-6xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
               Areas Served by BHHS Nevada Properties
             </h2>
@@ -392,6 +391,7 @@ export default function AboutPage() {
 
           {/* Client Testimonials */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
               What Clients Say About Dr. Jan Duffy
             </h2>
@@ -435,6 +435,7 @@ export default function AboutPage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Get Started?</h2>
             <p className="text-xl text-blue-100 mb-8">
               Questions about buying or selling in Las Vegas? Call or text Dr. Jan Duffy today 

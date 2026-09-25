@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Relocating from California to Las Vegas | Berkshire Hathaway HomeServices",
@@ -129,6 +130,7 @@ export default function CaliforniaRelocatorPage() {
               <Sun className="h-4 w-4 mr-2" />
               37% of Las Vegas Buyers Are From California
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Relocating from California?<br />
               <span className="text-blue-600">Welcome Home to Las Vegas</span>
@@ -149,6 +151,7 @@ export default function CaliforniaRelocatorPage() {
           <section className="mb-16 bg-gradient-to-br from-green-600 to-green-700 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="flex items-center justify-center mb-6">
               <Calculator className="h-10 w-10 mr-3" />
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold">California vs. Nevada: The Numbers</h2>
             </div>
             <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -177,6 +180,7 @@ export default function CaliforniaRelocatorPage() {
 
           {/* What Your CA Equity Buys */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               What Your California Equity Buys in Las Vegas
             </h2>
@@ -226,6 +230,7 @@ export default function CaliforniaRelocatorPage() {
 
           {/* Top Neighborhoods for CA Relocators */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Top 3 Neighborhoods for California Relocators
             </h2>
@@ -344,6 +349,7 @@ export default function CaliforniaRelocatorPage() {
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="flex items-center mb-6">
               <Briefcase className="h-8 w-8 text-blue-600 mr-3" />
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold text-slate-900">Remote Work, Vegas Lifestyle</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -385,6 +391,7 @@ export default function CaliforniaRelocatorPage() {
 
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               California Relocator FAQs
             </h2>
@@ -463,6 +470,7 @@ export default function CaliforniaRelocatorPage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Start Your Tax-Free Life?
             </h2>

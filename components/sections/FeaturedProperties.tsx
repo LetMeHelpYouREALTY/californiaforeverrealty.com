@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Bed, Bath, Square, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 interface Property {
   id: number;
@@ -95,6 +96,7 @@ export default function FeaturedProperties() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
               Featured Properties
             </h2>

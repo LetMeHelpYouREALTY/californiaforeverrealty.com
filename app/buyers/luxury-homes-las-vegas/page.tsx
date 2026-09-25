@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageBanner from "@/components/sections/PageBanner";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Luxury Homes Las Vegas | Berkshire Hathaway HomeServices",
@@ -91,6 +92,7 @@ export default function LuxuryHomesPage() {
               <Star className="h-4 w-4 mr-2" />
               $1.2M - $10M+
             </div>
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Las Vegas Luxury Real Estate
             </h1>
@@ -108,6 +110,7 @@ export default function LuxuryHomesPage() {
 
           {/* Market Performance */}
           <section className="mb-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold mb-8 text-center">
               Las Vegas Luxury Market Performance
             </h2>
@@ -137,6 +140,7 @@ export default function LuxuryHomesPage() {
 
           {/* Luxury Communities */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Premier Luxury Communities
             </h2>
@@ -323,6 +327,7 @@ export default function LuxuryHomesPage() {
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="flex items-center mb-6">
               <Lock className="h-8 w-8 text-slate-700 mr-3" />
+              <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
               <h2 className="text-3xl font-bold text-slate-900">Privacy & Discretion</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -384,6 +389,7 @@ export default function LuxuryHomesPage() {
 
           {/* CTA */}
           <section className="text-center bg-gradient-to-r from-slate-900 to-slate-800 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="mb-4 flex justify-center"><AgentPhoto size="sm" /></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Experience Las Vegas Luxury
             </h2>

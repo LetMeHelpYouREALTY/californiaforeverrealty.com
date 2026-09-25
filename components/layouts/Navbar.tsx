@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import AgentPhoto from "@/components/sections/AgentPhoto";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -61,7 +62,8 @@ export default function Navbar({ siteName }: NavbarProps) {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Brand Logo — site name when this domain is its own site */}
-          <Link href="/" className="flex flex-col max-w-[16rem] sm:max-w-xs" aria-label={siteName ?? "Berkshire Hathaway HomeServices"}>
+          <Link href="/" className="flex items-center gap-3 max-w-[18rem] sm:max-w-xs" aria-label={siteName ?? "Berkshire Hathaway HomeServices"}>
+            <AgentPhoto size="sm" />
             {siteName ? (
               <SiteNameLogo siteName={siteName} />
             ) : (
