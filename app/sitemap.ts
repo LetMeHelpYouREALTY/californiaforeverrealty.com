@@ -1,7 +1,12 @@
 import { MetadataRoute } from "next";
+import { headers } from "next/headers";
+import { canonicalOriginFromHost } from "@/lib/canonical-host";
+
+export const dynamic = "force-dynamic";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://heyberkshire.com";
+  const host = headers().get("x-domain") || headers().get("host") || "";
+  const baseUrl = canonicalOriginFromHost(host);
   const lastModified = new Date();
 
   // Core pages

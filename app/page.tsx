@@ -1,12 +1,35 @@
-import Navbar from "@/components/layouts/Navbar";
+import type { Metadata } from "next";
+import Image from "next/image";
+import SiteNavbar from "@/components/layouts/SiteNavbar";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
 import Footer from "@/components/layouts/Footer";
+import { SiteHeadingOutline } from "@/components/sections/SiteHeadingOutline";
 import Link from "next/link";
 import { Phone, Home as HomeIcon, TrendingUp, Shield, Users } from "lucide-react";
 import { getPageDomainConfig } from "@/lib/get-domain-config";
+import { canonicalOriginFromHost } from "@/lib/canonical-host";
+import {
+  CALIFORNIA_FOREVER_DOMAIN,
+  californiaForeverHeadings,
+} from "@/lib/california-forever-headings";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const config = await getPageDomainConfig();
+  const origin = canonicalOriginFromHost(
+    config.domain === "default" ? "heyberkshire.com" : config.domain
+  );
+
+  return {
+    alternates: { canonical: `${origin}/` },
+    description: config.description,
+    title: config.siteName
+      ? { absolute: `${config.heroHeadline} | ${config.siteName}` }
+      : undefined,
+  };
+}
 
 export default async function Home() {
   const config = await getPageDomainConfig();
@@ -15,8 +38,9 @@ export default async function Home() {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     name: `Dr. Jan Duffy - ${config.neighborhood} Real Estate`,
-    url: `https://${config.domain !== "default" ? config.domain : "heyberkshire.com"}`,
-    telephone: "+17022221964",
+    alternateName: config.siteName,
+    url: canonicalOriginFromHost(config.domain === "default" ? "heyberkshire.com" : config.domain),
+    telephone: "+1-702-500-1942",
     address: {
       "@type": "PostalAddress",
       streetAddress: "9406 W Lake Mead Blvd, Suite 100",
@@ -37,13 +61,18 @@ export default async function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-      <Navbar />
+      <SiteNavbar />
       <main>
-        {/* Domain-Aware Hero */}
+        {/* Domain-Aware Hero. Decorative wash is a compressed WebP, not the 2.3MB JPEG. */}
         <section className="relative bg-slate-900 text-white py-24 md:py-32 overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('/Image/hero_bg_1.jpg')" }}
+          <Image
+            src="/images/hero/hero-wash.webp"
+            alt=""
+            width={1280}
+            height={896}
+            priority={false}
+            fetchPriority="low"
+            className="absolute inset-0 h-full w-full object-cover opacity-30"
           />
           <div className="relative z-10 container mx-auto px-4 text-center">
             {config.ctaBadge && (
@@ -84,6 +113,10 @@ export default async function Home() {
             </div>
           </div>
         </section>
+
+        {config.domain === CALIFORNIA_FOREVER_DOMAIN ? (
+          <SiteHeadingOutline sections={californiaForeverHeadings} />
+        ) : null}
 
         {/* Value Proposition */}
         <section className="py-16 md:py-20 bg-white">

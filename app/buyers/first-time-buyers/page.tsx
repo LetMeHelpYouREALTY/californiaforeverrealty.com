@@ -1,4 +1,4 @@
-import Navbar from "@/components/layouts/Navbar";
+import SiteNavbar from "@/components/layouts/SiteNavbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -78,7 +78,7 @@ export default function FirstTimeBuyersPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <Navbar />
+      <SiteNavbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}

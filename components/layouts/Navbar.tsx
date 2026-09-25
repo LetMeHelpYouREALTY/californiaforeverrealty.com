@@ -5,7 +5,23 @@ import Link from "next/link";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export default function Navbar() {
+function SiteNameLogo({ siteName }: { siteName: string }) {
+  const [first, ...rest] = siteName.split(" ");
+  const remainder = rest.join(" ");
+
+  return (
+    <span className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 leading-tight">
+      {first}
+      {remainder ? <span className="text-blue-600"> {remainder}</span> : null}
+    </span>
+  );
+}
+
+type NavbarProps = {
+  siteName?: string;
+};
+
+export default function Navbar({ siteName }: NavbarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -44,13 +60,19 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          {/* Brand Logo */}
-          <Link href="/" className="flex flex-col">
-            <span className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors leading-tight">
-              Berkshire Hathaway
-              <span className="text-blue-600"> HomeServices</span>
-            </span>
-            <span className="text-xs text-slate-500 hidden sm:block">Nevada Properties</span>
+          {/* Brand Logo — site name when this domain is its own site */}
+          <Link href="/" className="flex flex-col max-w-[16rem] sm:max-w-xs" aria-label={siteName ?? "Berkshire Hathaway HomeServices"}>
+            {siteName ? (
+              <SiteNameLogo siteName={siteName} />
+            ) : (
+              <>
+                <span className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors leading-tight">
+                  Berkshire Hathaway
+                  <span className="text-blue-600"> HomeServices</span>
+                </span>
+                <span className="text-xs text-slate-500 hidden sm:block">Nevada Properties</span>
+              </>
+            )}
           </Link>
 
           {/* Desktop Navigation */}

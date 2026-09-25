@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { getPageDomainConfig } from "@/lib/get-domain-config";
 
-export default function Footer() {
+export default async function Footer() {
   const currentYear = new Date().getFullYear();
+  const config = await getPageDomainConfig();
+  const brandName = config.siteName ?? "Berkshire Hathaway HomeServices";
 
   return (
     <footer className="bg-slate-900 text-white">
@@ -10,7 +13,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div>
-            <h3 className="font-bold text-xl mb-4">Berkshire Hathaway HomeServices</h3>
+            <h3 className="font-bold text-xl mb-4">{brandName}</h3>
             <p className="text-slate-300 mb-4 text-sm">
               Nevada Properties - Your trusted real estate partner in Las Vegas, Henderson, and
               Summerlin. Backed by Warren Buffett's legacy of trust.
