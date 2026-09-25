@@ -51,7 +51,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={GeistSans.className}>
       <head>
-        {/* WidgetTracker */}
+        <link rel="dns-prefetch" href="https://em.realscout.com" />
+        <Script
+          src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
+          strategy="lazyOnload"
+        />
         <Script id="widget-tracker" strategy="lazyOnload">{`
           (function(w,i,d,g,e,t){w["WidgetTrackerObject"]=g;(w[g]=w[g]||function()
           {(w[g].q=w[g].q||[]).push(arguments);}),(w[g].ds=1*new Date());(e="script"),

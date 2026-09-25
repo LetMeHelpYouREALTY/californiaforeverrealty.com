@@ -74,6 +74,6 @@ export const DEFAULT_CONFIG: DomainConfig = {
 };
 
 export function getDomainConfig(hostname: string): DomainConfig {
-  const clean = hostname.replace(/^www\./, "").toLowerCase();
+  const clean = hostname.split(":")[0].replace(/^www\./, "").toLowerCase();
   return DOMAIN_CONFIGS[clean] ?? DEFAULT_CONFIG;
 }

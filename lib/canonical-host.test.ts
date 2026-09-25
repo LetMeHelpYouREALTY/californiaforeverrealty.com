@@ -28,6 +28,9 @@ describe("California Forever Realty headings", () => {
   it("has one H1 on the domain config and H2s with H3s", () => {
     const config = getDomainConfig("www.californiaforeverrealty.com");
     expect(config.siteName).toBe("California Forever Realty");
+    expect(getDomainConfig("www.californiaforeverrealty.com:443").siteName).toBe(
+      "California Forever Realty"
+    );
     expect(config.heroHeadline.startsWith("Moving from California")).toBe(true);
     expect(californiaForeverHeadings.length).toBeGreaterThanOrEqual(3);
     for (const section of californiaForeverHeadings) {
