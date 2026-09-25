@@ -17,6 +17,7 @@ import {
   Building,
   Heart,
 } from "lucide-react";
+import PageBanner from "@/components/sections/PageBanner";
 import type { Metadata } from "next";
 import {
   businessInfo,
@@ -64,6 +65,7 @@ export default function GoogleBusinessPage() {
       <SiteNavbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
+          <PageBanner src="/images/places/office-las-vegas.webp" alt="Office building in Las Vegas" />
           {/* Hero - NAP Prominent */}
           <section className="max-w-5xl mx-auto mb-16">
             <div className="bg-gradient-to-br from-slate-900 to-blue-900 text-white rounded-2xl p-8 md:p-12">

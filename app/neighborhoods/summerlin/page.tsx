@@ -3,6 +3,7 @@ import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone, MapPin, TreePine, Mountain, GraduationCap, ShoppingBag } from "lucide-react";
+import PageBanner from "@/components/sections/PageBanner";
 import type { Metadata } from "next";
 import SchemaScript from "@/components/SchemaScript";
 import {
@@ -90,6 +91,7 @@ export default function SummerlinPage() {
             </nav>
           </div>
 
+          <PageBanner src="/images/properties/summerlin-home.webp" alt="Two-story home in Summerlin, Las Vegas" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

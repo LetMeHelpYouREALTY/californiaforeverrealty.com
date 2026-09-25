@@ -15,6 +15,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageBanner from "@/components/sections/PageBanner";
 
 export const metadata: Metadata = {
   title: "Sun City Summerlin Homes for Sale | Berkshire Hathaway HomeServices",
@@ -68,6 +69,7 @@ export default function SunCitySummerlinPage() {
             </nav>
           </div>
 
+          <PageBanner src="/images/places/sun-city-summerlin.webp" alt="Golf-course homes in Sun City Summerlin" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

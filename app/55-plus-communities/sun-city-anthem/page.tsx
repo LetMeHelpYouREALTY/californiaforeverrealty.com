@@ -12,6 +12,7 @@ import {
   Users,
   CheckCircle,
 } from "lucide-react";
+import PageBanner from "@/components/sections/PageBanner";
 import type { Metadata } from "next";
 import SchemaScript from "@/components/SchemaScript";
 import {
@@ -117,6 +118,7 @@ export default function SunCityAnthemPage() {
             </nav>
           </div>
 
+          <PageBanner src="/images/places/sun-city-anthem.webp" alt="Homes and a clubhouse in Sun City Anthem, Henderson" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

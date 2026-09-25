@@ -18,6 +18,7 @@ import {
   HelpCircle,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageBanner from "@/components/sections/PageBanner";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
@@ -249,6 +250,7 @@ export default function NewConstructionPage() {
             </nav>
           </div>
 
+          <PageBanner src="/images/places/new-construction.webp" alt="New construction homes in Las Vegas" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

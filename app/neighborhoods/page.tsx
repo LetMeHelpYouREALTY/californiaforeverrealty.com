@@ -1,9 +1,11 @@
+import Image from "next/image";
 import SiteNavbar from "@/components/layouts/SiteNavbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { MapPin, Phone, Home, Users, GraduationCap } from "lucide-react";
 import type { Metadata } from "next";
+import PageBanner from "@/components/sections/PageBanner";
 
 export const metadata: Metadata = {
   title: "Las Vegas Neighborhoods | Berkshire Hathaway HomeServices",
@@ -111,12 +113,26 @@ const neighborhoods = [
   },
 ];
 
+const neighborhoodImages: Record<string, string> = {
+  summerlin: "/images/properties/summerlin-home.webp",
+  henderson: "/images/properties/henderson-home.webp",
+  "green-valley": "/images/properties/green-valley-estate.webp",
+  "the-ridges": "/images/places/ridges-estate.webp",
+  "southern-highlands": "/images/places/southern-highlands.webp",
+  "north-las-vegas": "/images/places/north-las-vegas.webp",
+  "skye-canyon": "/images/places/skye-canyon.webp",
+  "centennial-hills": "/images/places/centennial-hills.webp",
+  inspirada: "/images/places/inspirada.webp",
+  "mountains-edge": "/images/places/mountains-edge.webp",
+};
+
 export default function NeighborhoodsPage() {
   return (
     <>
       <SiteNavbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
+          <PageBanner src="/images/hero/las-vegas-valley.webp" alt="Las Vegas valley homes at dusk" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -138,8 +154,18 @@ export default function NeighborhoodsPage() {
                 <Link
                   key={neighborhood.slug}
                   href={`/neighborhoods/${neighborhood.slug}`}
-                  className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-all hover:border-blue-300 group"
+                  className="overflow-hidden rounded-lg border border-slate-200 bg-white hover:shadow-lg transition-all hover:border-blue-300 group"
                 >
+                  <div className="relative h-40">
+                    <Image
+                      src={neighborhoodImages[neighborhood.slug]}
+                      alt={`${neighborhood.name} homes`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
                   <div className="flex justify-between items-start mb-3">
                     <div>
                       <h2 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
@@ -162,6 +188,7 @@ export default function NeighborhoodsPage() {
                         {highlight}
                       </span>
                     ))}
+                  </div>
                   </div>
                 </Link>
               ))}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SiteNavbar from "@/components/layouts/SiteNavbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
@@ -19,6 +20,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageBanner from "@/components/sections/PageBanner";
 
 export const metadata: Metadata = {
   title: "Home Buying Guide Las Vegas | Berkshire Hathaway HomeServices",
@@ -100,6 +102,7 @@ export default function BuyersPage() {
       <SiteNavbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
+          <PageBanner src="/images/places/kitchen-keys.webp" alt="House keys on a kitchen counter in a Las Vegas home" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -252,7 +255,9 @@ export default function BuyersPage() {
                 href="/buyers/california-relocator"
                 className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow group"
               >
-                <div className="text-3xl mb-4">🌴</div>
+                <div className="relative mb-4 h-28 overflow-hidden rounded-lg">
+                  <Image src="/images/hero/las-vegas-valley.webp" alt="Las Vegas valley homes at dusk" fill sizes="280px" className="object-cover" />
+                </div>
                 <h3 className="font-bold text-lg text-slate-900 mb-2 group-hover:text-blue-600">
                   California Relocators
                 </h3>
@@ -266,7 +271,9 @@ export default function BuyersPage() {
                 href="/buyers/first-time-buyers"
                 className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow group"
               >
-                <div className="text-3xl mb-4">🔑</div>
+                <div className="relative mb-4 h-28 overflow-hidden rounded-lg">
+                  <Image src="/images/places/kitchen-keys.webp" alt="House keys on a kitchen counter" fill sizes="280px" className="object-cover" />
+                </div>
                 <h3 className="font-bold text-lg text-slate-900 mb-2 group-hover:text-blue-600">
                   First-Time Buyers
                 </h3>
@@ -280,7 +287,9 @@ export default function BuyersPage() {
                 href="/buyers/luxury-homes-las-vegas"
                 className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow group"
               >
-                <div className="text-3xl mb-4">💎</div>
+                <div className="relative mb-4 h-28 overflow-hidden rounded-lg">
+                  <Image src="/images/places/luxury-living.webp" alt="Luxury living room with a desert mountain view" fill sizes="280px" className="object-cover" />
+                </div>
                 <h3 className="font-bold text-lg text-slate-900 mb-2 group-hover:text-blue-600">
                   Luxury Home Buyers
                 </h3>

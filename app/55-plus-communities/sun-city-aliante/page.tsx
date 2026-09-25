@@ -14,6 +14,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageBanner from "@/components/sections/PageBanner";
 
 export const metadata: Metadata = {
   title: "Sun City Aliante Homes for Sale | Most Affordable Sun City | Dr. Jan Duffy",
@@ -79,6 +80,7 @@ export default function SunCityAliantePage() {
             </nav>
           </div>
 
+          <PageBanner src="/images/places/sun-city-aliante.webp" alt="Homes and a golf course in Sun City Aliante" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

@@ -12,6 +12,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageBanner from "@/components/sections/PageBanner";
 
 export const metadata: Metadata = {
   title: "Del Webb at Lake Las Vegas Homes | Berkshire Hathaway HomeServices",
@@ -43,6 +44,7 @@ export default function DelWebbLakeLasVegasPage() {
             </nav>
           </div>
 
+          <PageBanner src="/images/places/lake-las-vegas.webp" alt="Homes above the water at Lake Las Vegas" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

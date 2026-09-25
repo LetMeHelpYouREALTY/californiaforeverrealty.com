@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SiteNavbar from "@/components/layouts/SiteNavbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
@@ -23,6 +24,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageBanner from "@/components/sections/PageBanner";
 
 export const metadata: Metadata = {
   title:
@@ -322,6 +324,17 @@ const lifestyleBenefits = [
   },
 ];
 
+const communityImages: Record<string, string> = {
+  "sun-city-summerlin": "/images/places/sun-city-summerlin.webp",
+  "sun-city-anthem": "/images/places/sun-city-anthem.webp",
+  "sun-city-aliante": "/images/places/sun-city-aliante.webp",
+  "del-webb-lake-las-vegas": "/images/places/lake-las-vegas.webp",
+  "heritage-stonebridge": "/images/places/heritage-stonebridge.webp",
+  "solera-anthem": "/images/places/solera-anthem.webp",
+  "trilogy-summerlin": "/images/places/trilogy-summerlin.webp",
+  siena: "/images/places/siena-summerlin.webp",
+};
+
 export default function FiftyFiveCommunitiesPage() {
   return (
     <>
@@ -351,6 +364,7 @@ export default function FiftyFiveCommunitiesPage() {
             </nav>
           </div>
 
+          <PageBanner src="/images/places/sun-city-summerlin.webp" alt="Golf-course homes in Sun City Summerlin" />
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -538,6 +552,15 @@ export default function FiftyFiveCommunitiesPage() {
                   key={community.name}
                   className="bg-white border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow"
                 >
+                  <div className="relative h-44">
+                    <Image
+                      src={communityImages[community.slug ?? "siena"]}
+                      alt={`${community.name} in ${community.location}`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover"
+                    />
+                  </div>
                   <div className="bg-slate-900 text-white p-6">
                     <h3 className="text-xl font-bold mb-1">{community.name}</h3>
                     <div className="flex items-center text-slate-300 text-sm">

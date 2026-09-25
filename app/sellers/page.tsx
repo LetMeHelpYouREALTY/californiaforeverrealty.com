@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SiteNavbar from "@/components/layouts/SiteNavbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
@@ -18,6 +19,7 @@ import {
   Award,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageBanner from "@/components/sections/PageBanner";
 
 export const metadata: Metadata = {
   title: "Sell Your Las Vegas Home | Berkshire Hathaway HomeServices",
@@ -132,6 +134,7 @@ export default function SellersPage() {
       <SiteNavbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
+          <PageBanner src="/images/places/curb-appeal.webp" alt="Las Vegas home exterior prepared for sale" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -255,7 +258,9 @@ export default function SellersPage() {
                 href="/sellers/move-up"
                 className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow group"
               >
-                <div className="text-3xl mb-4">🏡</div>
+                <div className="relative mb-4 h-28 overflow-hidden rounded-lg">
+                  <Image src="/images/properties/summerlin-home.webp" alt="Two-story home in Summerlin" fill sizes="240px" className="object-cover" />
+                </div>
                 <h3 className="font-bold text-lg text-slate-900 mb-2 group-hover:text-blue-600">
                   Move-Up Sellers
                 </h3>
@@ -268,7 +273,9 @@ export default function SellersPage() {
                 href="/sellers/downsizing"
                 className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow group"
               >
-                <div className="text-3xl mb-4">🌴</div>
+                <div className="relative mb-4 h-28 overflow-hidden rounded-lg">
+                  <Image src="/images/places/patio-home.webp" alt="Single-story patio home in Las Vegas" fill sizes="240px" className="object-cover" />
+                </div>
                 <h3 className="font-bold text-lg text-slate-900 mb-2 group-hover:text-blue-600">
                   Downsizing
                 </h3>
@@ -281,7 +288,9 @@ export default function SellersPage() {
                 href="/sellers/divorce-probate"
                 className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow group"
               >
-                <div className="text-3xl mb-4">⚖️</div>
+                <div className="relative mb-4 h-28 overflow-hidden rounded-lg">
+                  <Image src="/images/places/curb-appeal.webp" alt="Las Vegas home exterior" fill sizes="240px" className="object-cover" />
+                </div>
                 <h3 className="font-bold text-lg text-slate-900 mb-2 group-hover:text-blue-600">
                   Divorce & Probate
                 </h3>
@@ -294,7 +303,9 @@ export default function SellersPage() {
                 href="/sellers/relocation"
                 className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow group"
               >
-                <div className="text-3xl mb-4">✈️</div>
+                <div className="relative mb-4 h-28 overflow-hidden rounded-lg">
+                  <Image src="/images/places/relocation-home.webp" alt="Las Vegas home with moving boxes at the door" fill sizes="240px" className="object-cover" />
+                </div>
                 <h3 className="font-bold text-lg text-slate-900 mb-2 group-hover:text-blue-600">
                   Relocation
                 </h3>

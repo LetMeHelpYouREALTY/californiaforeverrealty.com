@@ -5,6 +5,7 @@ import { Phone, Mail, MapPin, Clock, Calendar, CheckCircle, Star, Users, Shield 
 import CalendlyWidget from "@/components/calendly/CalendlyWidget";
 import Link from "next/link";
 import type { Metadata } from "next";
+import PageBanner from "@/components/sections/PageBanner";
 
 export const metadata: Metadata = {
   title: "Contact Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
@@ -48,6 +49,7 @@ export default function ContactPage() {
       <SiteNavbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
+          <PageBanner src="/images/places/office-las-vegas.webp" alt="Office building in Las Vegas" />
           {/* Hero */}
           <div className="text-center mb-12">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

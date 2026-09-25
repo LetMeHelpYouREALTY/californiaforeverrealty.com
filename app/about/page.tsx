@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SiteNavbar from "@/components/layouts/SiteNavbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
@@ -17,6 +18,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageBanner from "@/components/sections/PageBanner";
 
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
@@ -122,6 +124,7 @@ export default function AboutPage() {
       <SiteNavbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
+          <PageBanner src="/images/places/office-las-vegas.webp" alt="Office building in Las Vegas" />
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -223,13 +226,18 @@ export default function AboutPage() {
 
               {/* Stats & Credentials */}
               <div className="space-y-6">
-                {/* Agent Photo Placeholder */}
-                <div className="bg-gradient-to-br from-blue-100 to-slate-100 rounded-lg p-8 aspect-square flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">👩‍💼</div>
-                    <p className="text-slate-600 font-semibold">Dr. Jan Duffy</p>
-                    <p className="text-sm text-slate-500">BHHS Nevada Properties</p>
+                <div>
+                  <div className="relative aspect-square overflow-hidden rounded-lg">
+                    <Image
+                      src="/images/agent/office-square.webp"
+                      alt="Berkshire Hathaway HomeServices Nevada Properties office in Las Vegas"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 400px"
+                      className="object-cover"
+                    />
                   </div>
+                  <p className="mt-3 text-center font-semibold text-slate-900">Dr. Jan Duffy</p>
+                  <p className="text-center text-sm text-slate-500">BHHS Nevada Properties</p>
                 </div>
 
                 {/* Stats Grid */}

@@ -1,9 +1,11 @@
+import Image from "next/image";
 import SiteNavbar from "@/components/layouts/SiteNavbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Shield, Users, Globe, Award, TrendingUp, CheckCircle, Phone } from "lucide-react";
 import type { Metadata } from "next";
+import PageBanner from "@/components/sections/PageBanner";
 
 export const metadata: Metadata = {
   title: "Why Choose Berkshire Hathaway HomeServices | Las Vegas Real Estate",
@@ -44,6 +46,7 @@ export default function WhyBerkshireHathawayPage() {
       <SiteNavbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
+          <PageBanner src="/images/places/office-las-vegas.webp" alt="Office building in Las Vegas" />
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -77,12 +80,22 @@ export default function WhyBerkshireHathawayPage() {
                   professionals who uphold the highest standards in the industry.
                 </p>
               </div>
-              <div className="bg-slate-800 rounded-lg p-8 text-center">
-                <div className="text-6xl mb-4">🏛️</div>
+              <div className="overflow-hidden rounded-lg bg-slate-800 text-center">
+                <div className="relative h-48">
+                  <Image
+                    src="/images/places/office-las-vegas.webp"
+                    alt="Office building in Las Vegas"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 480px"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-8">
                 <p className="text-2xl font-bold mb-2">Fortune #1</p>
                 <p className="text-slate-400">
                   Berkshire Hathaway Inc. consistently ranks among the top companies in the world
                 </p>
+                </div>
               </div>
             </div>
           </section>

@@ -3,6 +3,7 @@ import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone } from "lucide-react";
+import PageBanner from "@/components/sections/PageBanner";
 import type { Metadata } from "next";
 import SchemaScript from "@/components/SchemaScript";
 import {
@@ -185,6 +186,7 @@ export default function FAQPage() {
       <SiteNavbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
+          <PageBanner src="/images/places/las-vegas-skyline.webp" alt="Las Vegas valley and skyline at dusk" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

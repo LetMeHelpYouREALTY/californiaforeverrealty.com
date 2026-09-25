@@ -4,6 +4,7 @@ import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone, Mountain, Users, ShoppingBag, Home as HomeIcon } from "lucide-react";
 import type { Metadata } from "next";
+import PageBanner from "@/components/sections/PageBanner";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Centennial Hills | Las Vegas Homes",
@@ -78,6 +79,7 @@ export default function CentennialHillsPage() {
             </nav>
           </div>
 
+          <PageBanner src="/images/places/centennial-hills.webp" alt="Homes in Centennial Hills with mountains behind them" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
