@@ -33,16 +33,24 @@ const features = [
   },
 ];
 
-export default function WhyChooseUs() {
+type WhyChooseUsProps = {
+  title?: string;
+  subtitle?: string;
+};
+
+export default function WhyChooseUs({
+  title = "Why Choose Us",
+  subtitle = "Experience the difference of working with a trusted real estate professional",
+}: WhyChooseUsProps) {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-            Why Choose Us
+            {title}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Experience the difference of working with a trusted real estate professional
+            {subtitle}
           </p>
         </div>
 

@@ -15,6 +15,7 @@ import {
   CALIFORNIA_FOREVER_DOMAIN,
   californiaForeverHeadings,
 } from "@/lib/california-forever-headings";
+import { marketStats } from "@/lib/site-config";
 
 export async function generateMetadata(): Promise<Metadata> {
   const config = await getPageDomainConfig();
@@ -33,6 +34,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function Home() {
   const config = await getPageDomainConfig();
+  const isOwnSite = config.domain === CALIFORNIA_FOREVER_DOMAIN;
 
   const organizationSchema = {
     "@context": "https://schema.org",
@@ -68,10 +70,10 @@ export default async function Home() {
           <Image
             src="/images/hero/hero-wash.webp"
             alt=""
-            width={1280}
-            height={896}
+            width={828}
+            height={580}
+            unoptimized
             priority={false}
-            fetchPriority="low"
             className="absolute inset-0 h-full w-full object-cover opacity-30"
           />
           <div className="relative z-10 container mx-auto px-4 text-center">
@@ -114,11 +116,12 @@ export default async function Home() {
           </div>
         </section>
 
-        {config.domain === CALIFORNIA_FOREVER_DOMAIN ? (
-          <SiteHeadingOutline sections={californiaForeverHeadings} />
+        {isOwnSite ? (
+          <SiteHeadingOutline sections={californiaForeverHeadings.slice(0, 1)} showNap={false} />
         ) : null}
 
         {/* Value Proposition */}
+        {isOwnSite ? null : (
         <section className="py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12">
@@ -147,6 +150,7 @@ export default async function Home() {
             </div>
           </div>
         </section>
+        )}
 
         {/* Market Stats */}
         <section className="py-16 bg-slate-900 text-white">
@@ -155,14 +159,14 @@ export default async function Home() {
               <h2 className="text-3xl font-bold mb-3">
                 {config.neighborhood} Real Estate Market
               </h2>
-              <p className="text-slate-400">Current data — updated regularly</p>
+              <p className="text-slate-400">Figures from {marketStats.lastUpdated}</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {[
-                { value: "$450K", label: "Median Price", sub: "+4.2% YoY" },
-                { value: "28", label: "Avg Days on Market", sub: "" },
-                { value: "4,850", label: "Active Listings", sub: "" },
-                { value: "2.1", label: "Months Inventory", sub: "" },
+                { value: marketStats.lasVegas.medianPriceFormatted, label: "Median Price", sub: marketStats.lasVegas.yearOverYearChange + " YoY" },
+                { value: String(marketStats.lasVegas.daysOnMarket), label: "Avg Days on Market", sub: "" },
+                { value: marketStats.lasVegas.activeListings.toLocaleString("en-US"), label: "Active Listings", sub: "" },
+                { value: String(marketStats.lasVegas.inventoryMonths), label: "Months Inventory", sub: "" },
               ].map(({ value, label, sub }) => (
                 <div key={label} className="text-center">
                   <div className="text-4xl font-bold text-blue-400 mb-1">{value}</div>
@@ -179,10 +183,40 @@ export default async function Home() {
           </div>
         </section>
 
-        <RealScoutListings />
-        <WhyChooseUs />
-        <ReviewsSection />
-        <FAQSection />
+        {isOwnSite ? (
+          <RealScoutListings
+            showHeading={false}
+            title="Las Vegas homes for sale"
+            subtitle="Listings Dr. Jan Duffy can tour with you."
+          />
+        ) : (
+          <RealScoutListings />
+        )}
+        {isOwnSite ? (
+          <SiteHeadingOutline
+            sections={californiaForeverHeadings.slice(1)}
+            showEyebrow={false}
+            className="pb-16 bg-white"
+          />
+        ) : (
+          <WhyChooseUs />
+        )}
+        <ReviewsSection
+          title={isOwnSite ? "What clients say" : undefined}
+          subtitle={
+            isOwnSite
+              ? "Reviews from Las Vegas and Henderson buyers and sellers."
+              : undefined
+          }
+        />
+        <FAQSection
+          title={isOwnSite ? "Questions before the move" : undefined}
+          subtitle={
+            isOwnSite
+              ? "Timing, cost, and how a California sale lines up with a Nevada purchase."
+              : undefined
+          }
+        />
 
         {/* Domain-Specific CTA */}
         <section className="py-16 md:py-20 bg-blue-600 text-white">
