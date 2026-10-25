@@ -108,7 +108,7 @@ export default async function Home() {
                 <span>Families Helped</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">30+ Years</span>
+                <span className="font-semibold text-white">Licensed Since 2008</span>
                 <span>Las Vegas Experience</span>
               </div>
               <div className="flex items-center gap-2">
@@ -140,7 +140,7 @@ export default async function Home() {
               {[
                 { icon: Shield, title: "Trusted Brand", desc: "Backed by Warren Buffett's Berkshire Hathaway — unmatched integrity" },
                 { icon: Users, title: "50K+ Network", desc: "Global referral network for seamless moves to or from any market" },
-                { icon: TrendingUp, title: "$127M+ Sold", desc: "Proven results across every Las Vegas neighborhood since 2008" },
+                { icon: TrendingUp, title: "$127M+ Team Career Sales", desc: "Proven results across every Las Vegas neighborhood since 2008" },
                 { icon: HomeIcon, title: "Full Service", desc: "Buying, selling, 55+, luxury, investment — one expert handles it all" },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="text-center p-6">
