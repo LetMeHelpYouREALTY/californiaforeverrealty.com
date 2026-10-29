@@ -44,7 +44,7 @@ export default async function Home() {
     alternateName: config.siteName,
     url: canonicalOriginFromHost(config.domain === "default" ? "heyberkshire.com" : config.domain),
     image: `${canonicalOriginFromHost(config.domain === "default" ? "heyberkshire.com" : config.domain)}/images/agent/dr-jan-duffy.jpg`,
-    telephone: "+1-702-500-1942",
+    telephone: "+1-702-500-1955",
     address: {
       "@type": "PostalAddress",
       streetAddress: "9406 W Lake Mead Blvd, Suite 100",

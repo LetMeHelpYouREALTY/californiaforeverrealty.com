@@ -45,8 +45,8 @@ export function SiteHeadingOutline({
           <p className="text-slate-700 text-sm">
             Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties.{" "}
             <span>9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.</span>{" "}
-            <a href="tel:+17025001942" className="text-blue-600 font-semibold hover:text-blue-700">
-              (702) 500-1942
+            <a href="tel:+17025001955" className="text-blue-600 font-semibold hover:text-blue-700">
+              (702) 500-1955
             </a>
           </p>
         ) : null}
