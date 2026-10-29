@@ -4,8 +4,9 @@ import { canonicalOriginFromHost } from "@/lib/canonical-host";
 
 export const dynamic = "force-dynamic";
 
-export default function robots(): MetadataRoute.Robots {
-  const host = headers().get("x-domain") || headers().get("host") || "";
+export default async function robots(): Promise<MetadataRoute.Robots> {
+  const host =
+    (await headers()).get("x-domain") || (await headers()).get("host") || "";
   const origin = canonicalOriginFromHost(host);
 
   return {

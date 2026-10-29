@@ -8,7 +8,8 @@ import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const domain = headers().get("x-domain") || headers().get("host") || "";
+  const domain =
+    (await headers()).get("x-domain") || (await headers()).get("host") || "";
   const config = getDomainConfig(domain);
   const origin = canonicalOriginFromHost(domain);
   const siteName = config.siteName ?? "HeyBerkshire";
@@ -43,11 +44,17 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName,
       locale: "en_US",
     },
-    verification: googleVerification ? { google: googleVerification } : undefined,
+    verification: googleVerification
+      ? { google: googleVerification }
+      : undefined,
   };
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={GeistSans.className}>
       <head>
