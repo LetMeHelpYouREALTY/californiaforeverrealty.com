@@ -25,6 +25,9 @@ export async function generateMetadata(): Promise<Metadata> {
       : `${config.neighborhood} | Dr. Jan Duffy, REALTOR® | BHHS Nevada`,
     description: config.description,
     keywords: config.keywords,
+    // './' resolves to each page's own URL on the canonical host, so pages
+    // without their own canonical still declare a self-referencing one.
+    alternates: { canonical: "./" },
     robots: {
       index: true,
       follow: true,
