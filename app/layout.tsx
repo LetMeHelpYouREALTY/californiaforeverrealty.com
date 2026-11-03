@@ -6,6 +6,7 @@ import { getDomainConfig } from "@/lib/domain-config";
 import { canonicalOriginFromHost } from "@/lib/canonical-host";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
+import RealtorAnalytics from "../components/analytics/RealtorAnalytics";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain =
@@ -79,6 +80,7 @@ export default function RootLayout({
       <body>
         {children}
         <Analytics />
+        <RealtorAnalytics siteName="californiaforeverrealty.com" />
       </body>
     </html>
   );
